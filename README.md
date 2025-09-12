@@ -52,7 +52,7 @@ host: x86_64-unknown-linux-gnu
 release: 1.89.0
 LLVM version: 20.1.8
 ```
-<details>
+</details>
 
 On Intel Core i7-8565U: **x53.40 slower** <details><summary>click for details...</summary>
 
@@ -84,4 +84,4 @@ host: x86_64-unknown-linux-gnu
 release: 1.89.0
 LLVM version: 20.1.8
 ```
-<details>
+</details>
