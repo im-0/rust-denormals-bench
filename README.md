@@ -245,7 +245,7 @@ LLVM version: 20.1.8
 ```
 </details>
 
-Allwinner A64 (Pine A64+): **x1.04 slower** <details><summary>click for details...</summary>
+On Allwinner A64 (Pine A64+): **x1.04 slower** <details><summary>click for details...</summary>
 
 ```text
 f32_normal              time:   [21.889 ns 21.891 ns 21.894 ns]
