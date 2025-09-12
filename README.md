@@ -211,3 +211,23 @@ release: 1.89.0
 LLVM version: 20.1.8
 ```
 </details>
+
+On Broadcom BCM2710A1 (Raspberry Pi Zero 2 W): **x1.04 slower** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [22.182 ns 22.195 ns 22.213 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+
+f32_subnormal           time:   [23.187 ns 23.194 ns 23.203 ns]
+Found 15 outliers among 100 measurements (15.00%)
+  4 (4.00%) high mild
+  11 (11.00%) high severe
+
+f32_subnormal_flushed   time:   [22.205 ns 22.225 ns 22.248 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+  ```
+</details>
