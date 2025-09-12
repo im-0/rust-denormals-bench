@@ -120,7 +120,7 @@ LLVM version: 20.1.8
 
 ### aarch64 (arm64)
 
-On Apple M2 Max: **no slowdown** <details><summary>click for details...</summary>
+On Apple M2 Max (Apple MacBook Pro 14-inch 2023): **no slowdown** <details><summary>click for details...</summary>
 
 ```text
 f32_normal              time:   [654.07 ps 654.11 ps 654.15 ps]
@@ -183,7 +183,7 @@ LLVM version: 20.1.8
 ```
 </details>
 
-On Qualcomm Snapdragon SC8280XP: **no slowdown** <details><summary>click for details...</summary>
+On Qualcomm Snapdragon SC8280XP (Lenovo ThinkPad X13s): **no slowdown** <details><summary>click for details...</summary>
 
 ```text
 f32_normal              time:   [786.49 ps 786.74 ps 787.02 ps]
