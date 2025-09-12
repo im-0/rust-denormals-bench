@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
-// Copied from from https://github.com/dimforge/rapier
+// Copied from https://github.com/dimforge/rapier
 
 macro_rules! enable_flush_to_zero(
     () => {
