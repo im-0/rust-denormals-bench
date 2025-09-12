@@ -85,3 +85,66 @@ release: 1.89.0
 LLVM version: 20.1.8
 ```
 </details>
+
+On Apple M2 Max: **no slowdown** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [654.07 ps 654.11 ps 654.15 ps]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) low mild
+  5 (5.00%) high mild
+  3 (3.00%) high severe
+
+f32_subnormal           time:   [653.40 ps 653.46 ps 653.53 ps]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low severe
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+
+f32_subnormal_flushed   time:   [653.34 ps 653.41 ps 653.51 ps]
+Found 9 outliers among 100 measurements (9.00%)
+  2 (2.00%) low severe
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+#rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04) (Fedora 1.89.0-2.fc42)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: aarch64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 20.1.8
+```
+</details>
+
+On Broadcom BCM2711 (Raspberry Pi 4): **no slowdown** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [3.3524 ns 3.3537 ns 3.3553 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+
+f32_subnormal           time:   [3.3511 ns 3.3515 ns 3.3520 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+
+f32_subnormal_flushed   time:   [3.3532 ns 3.3537 ns 3.3542 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+
+#rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04) (Fedora 1.89.0-2.fc42)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: aarch64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 20.1.8
+```
+</details>
