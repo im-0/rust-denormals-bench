@@ -1,0 +1,18 @@
+[package]
+name = "rust-denormals-bench"
+version = "0.1.0"
+edition = "2024"
+
+authors = ["Ivan Mironov <mironov.ivan@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/im-0/rust-denormals-bench"
+readme = "README.md"
+
+[dependencies]
+criterion = { version = "0.7" }
+rand = { version = "0.9" }
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
