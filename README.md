@@ -54,6 +54,36 @@ LLVM version: 20.1.8
 ```
 </details>
 
+On Intel Core i9-9900K: **x50.31 slower** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [697.17 ps 697.95 ps 698.83 ps]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+f32_subnormal           time:   [35.085 ns 35.114 ns 35.148 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+
+f32_subnormal_flushed   time:   [686.81 ps 688.20 ps 690.18 ps]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+
+# rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04) (Fedora 1.89.0-2.fc41)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: x86_64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 19.1.7
+```
+</details>
+
 On Intel Core i7-8565U: **x53.40 slower** <details><summary>click for details...</summary>
 
 ```text
