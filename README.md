@@ -20,6 +20,8 @@ cargo run --release -- --bench
 
 ## Benchmark results
 
+### x86_64
+
 On AMD Ryzen 9 5950X: **x1.42 slower** <details><summary>click for details...</summary>
 
 ```text
@@ -115,6 +117,8 @@ release: 1.89.0
 LLVM version: 20.1.8
 ```
 </details>
+
+### aarch64 (arm64)
 
 On Apple M2 Max: **no slowdown** <details><summary>click for details...</summary>
 
