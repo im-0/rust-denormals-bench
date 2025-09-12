@@ -148,3 +148,36 @@ release: 1.89.0
 LLVM version: 20.1.8
 ```
 </details>
+
+On Qualcomm Snapdragon SC8280XP: **no slowdown** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [786.49 ps 786.74 ps 787.02 ps]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+
+f32_subnormal           time:   [787.63 ps 787.77 ps 787.96 ps]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) low severe
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+f32_subnormal_flushed   time:   [786.92 ps 786.97 ps 787.03 ps]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) low severe
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+#rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04) (Fedora 1.89.0-2.fc42)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: aarch64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 20.1.8
+```
+</details>
