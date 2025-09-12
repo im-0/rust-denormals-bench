@@ -229,5 +229,14 @@ f32_subnormal_flushed   time:   [22.205 ns 22.225 ns 22.248 ns]
 Found 10 outliers among 100 measurements (10.00%)
   6 (6.00%) high mild
   4 (4.00%) high severe
-  ```
+
+#rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04) (Fedora 1.89.0-2.fc42)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: aarch64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 20.1.8
+```
 </details>
