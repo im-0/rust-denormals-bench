@@ -244,3 +244,35 @@ release: 1.89.0
 LLVM version: 20.1.8
 ```
 </details>
+
+Allwinner A64 (Pine A64+): **x1.04 slower** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [21.889 ns 21.891 ns 21.894 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+f32_subnormal           time:   [22.881 ns 22.884 ns 22.888 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+
+f32_subnormal_flushed   time:   [21.887 ns 21.889 ns 21.892 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+
+#rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04) (Fedora 1.89.0-2.fc42)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: aarch64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 20.1.8
+```
+</details>
