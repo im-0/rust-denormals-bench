@@ -1,5 +1,6 @@
 [package]
 name = "rust-denormals-bench"
+description = "Benchmark that demonstrates the negative performance impact of denormals"
 version = "0.1.0"
 edition = "2024"
 
