@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 
-use criterion::{Criterion, criterion_group};
-use rand::random_range;
 use std::env::args;
 use std::process::{Command, exit};
+
+use criterion::{Criterion, criterion_group};
+use rand::random_range;
 
 mod flush;
 
