@@ -22,6 +22,34 @@ cargo run --release -- --bench
 
 ### x86_64
 
+On AMD Ryzen 9 9950X: **x1.45 slower** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [583.25 ps 583.33 ps 583.40 ps]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low severe
+  2 (2.00%) high mild
+
+f32_subnormal           time:   [846.93 ps 849.16 ps 851.37 ps]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+
+f32_subnormal_flushed   time:   [562.40 ps 562.43 ps 562.46 ps]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+
+# rustc -vV
+rustc 1.89.0 (29483883e 2025-08-04)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: x86_64-unknown-linux-gnu
+release: 1.89.0
+LLVM version: 20.1.7
+```
+</details>
+
 On AMD Ryzen 9 5950X: **x1.42 slower** <details><summary>click for details...</summary>
 
 ```text
