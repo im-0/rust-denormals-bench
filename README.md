@@ -22,6 +22,35 @@ cargo run --release -- --bench
 
 ### x86_64
 
+On Intel Core Ultra 5 135H: **x46.93 slower** <details><summary>click for details...</summary>
+
+```text
+f32_normal              time:   [709.01 ps 714.70 ps 720.81 ps]
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+
+f32_subnormal           time:   [33.286 ns 33.541 ns 33.814 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+
+f32_subnormal_flushed   time:   [794.58 ps 806.24 ps 818.61 ps]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+# rustc.exe -vV
+rustc 1.89.0 (29483883e 2025-08-04)
+binary: rustc
+commit-hash: 29483883eed69d5fb4db01964cdf2af4d86e9cb2
+commit-date: 2025-08-04
+host: x86_64-pc-windows-msvc
+release: 1.89.0
+LLVM version: 20.1.7
+```
+</details>
+
 On AMD Ryzen 9 9950X: **x1.45 slower** <details><summary>click for details...</summary>
 
 ```text
