@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 use std::env::args;
+use std::hint::black_box;
 use std::process::{Command, exit};
 
 use criterion::{Criterion, criterion_group};
@@ -91,5 +92,5 @@ fn rand_subnormal_f32() -> f32 {
 #[inline(always)]
 #[must_use]
 fn fp_op(v1: f32, v2: f32, v3: f32, v4: f32, v5: f32, v6: f32) -> f32 {
-    v1 / v2 + v3 * v4 * v5 * v6
+    black_box(v1) / black_box(v2) + black_box(v3) * black_box(v4) * black_box(v5) * black_box(v6)
 }
